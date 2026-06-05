@@ -14,12 +14,12 @@ export default function Footer() {
               <Logo />
             </Link>
             <p className="text-brand-silver text-sm leading-relaxed">
-              Premium wall and floor tiling services in Sydney. Specialising in bathrooms, kitchens, splashbacks, waterproofing, and custom tile installations.
+              Premium wall and floor tiling services in Melbourne. Specialising in bathrooms, kitchens, splashbacks, waterproofing, and custom tile installations.
             </p>
             <div className="flex flex-col gap-2.5 pt-2 text-xs text-brand-silver">
               <div className="flex items-center gap-2">
                 <Award size={14} className="text-brand-blue" />
-                <span>NSW Contractor Licence: <strong>392817C</strong></span>
+                <span>Licensed & Fully Insured Tilers</span>
               </div>
               <div className="flex items-center gap-2">
                 <ShieldCheck size={14} className="text-brand-blue" />
@@ -90,7 +90,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-brand-silver">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-brand-blue shrink-0 mt-0.5" />
-                <span>Sydney, NSW, Australia</span>
+                <span>Melbourne, VIC, Australia</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-brand-blue shrink-0" />

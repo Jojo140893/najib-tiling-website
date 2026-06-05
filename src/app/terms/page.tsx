@@ -21,7 +21,7 @@ export default function TermsOfService() {
 
         <h2 className="text-lg font-bold text-slate-900 mt-8 mb-2">3. Licensing Compliance</h2>
         <p>
-          NJ Pro Tiling holds full NSW contractor licence #392817C. Tiling and waterproofing work is carried out in strict accordance with the Home Building Act 1989 and AS 3740 standard specifications.
+          NJ Pro Tiling holds full contractor licensing and public liability insurance. Tiling and waterproofing work is carried out in strict accordance with Victorian building regulations, VBA guidelines, and AS 3740 standard specifications.
         </p>
 
         <h2 className="text-lg font-bold text-slate-900 mt-8 mb-2">4. Copyright</h2>

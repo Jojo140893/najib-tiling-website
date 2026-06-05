@@ -141,7 +141,7 @@ export default function Contact() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Award size={16} className="text-brand-blue shrink-0" />
-                    <span>Licence Number: <strong>392817C</strong> (NSW Licensed Tiler)</span>
+                    <span>Licensed & Fully Insured Tiling Contractor</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <ShieldCheck size={16} className="text-brand-blue shrink-0" />
@@ -280,34 +280,34 @@ export default function Contact() {
             <div className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm lg:col-span-1 flex flex-col gap-6">
               <h2 className="text-xl font-black text-slate-900 tracking-tight">Our Service Area</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
-                NJ Pro Tiling is based in Sydney, NSW. We service the entire Sydney Metropolitan Area, including:
+                NJ Pro Tiling is based in Melbourne, VIC. We service the entire Melbourne Metropolitan Area, including:
               </p>
               
-              {/* Sydney Suburbs Listing */}
+              {/* Melbourne Suburbs Listing */}
               <div className="grid grid-cols-2 gap-3 text-xs font-semibold text-slate-700">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />
+                  <span>Melbourne CBD</span>
+                </div>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />
                   <span>Eastern Suburbs</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />
-                  <span>Hills District</span>
+                  <span>Northern Suburbs</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />
-                  <span>Inner West</span>
+                  <span>Western Suburbs</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />
-                  <span>North Shore</span>
+                  <span>Southeastern Suburbs</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />
-                  <span>Western Sydney</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />
-                  <span>Sutherland Shire</span>
+                  <span>Mornington Peninsula</span>
                 </div>
               </div>
 
@@ -327,7 +327,7 @@ export default function Contact() {
                   {/* Service Zone Core Radius */}
                   <circle cx="50" cy="50" r="24" fill="#0066FF" fillOpacity="0.08" stroke="#0066FF" strokeWidth="1.5" />
                   
-                  {/* Center Node (Sydney Pin) */}
+                  {/* Center Node (Melbourne Pin) */}
                   <circle cx="50" cy="50" r="4" fill="#0066FF" />
                   <circle cx="50" cy="50" r="8" stroke="#0066FF" strokeWidth="1.5" className="animate-ping" />
                 </svg>

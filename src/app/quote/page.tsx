@@ -188,7 +188,7 @@ function QuoteFormContent() {
                         </label>
                         <input
                           type="text"
-                          placeholder="e.g. Parramatta, Sydney"
+                          placeholder="e.g. South Yarra, Melbourne"
                           {...register("suburb", { required: "Project suburb/location is required" })}
                           className={`w-full px-4 py-2.5 rounded-lg border text-sm focus:outline-none focus:ring-1 focus:ring-brand-blue ${
                             errors.suburb ? "border-red-300 bg-red-50/20" : "border-slate-200"
@@ -321,7 +321,7 @@ function QuoteFormContent() {
                     <CheckCircle2 size={16} className="text-brand-blue shrink-0 mt-0.5" />
                     <div>
                       <span className="block font-bold text-slate-900 mb-0.5">Licensed & Registered Contractor</span>
-                      <span>Compliant with NSW licensing. License number 392817C.</span>
+                      <span>Compliant with Victorian waterproofing standards and codes.</span>
                     </div>
                   </li>
                   <li className="flex gap-3">

@@ -12,16 +12,16 @@ export default function SEO() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Sydney Metro Area",
-      "addressLocality": "Sydney",
-      "addressRegion": "NSW",
-      "postalCode": "2000",
+      "streetAddress": "Melbourne Metro Area",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "postalCode": "3000",
       "addressCountry": "AU"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": -33.8688,
-      "longitude": 151.2093
+      "latitude": -37.8136,
+      "longitude": 144.9631
     },
     "openingHoursSpecification": [
       {
@@ -44,7 +44,7 @@ export default function SEO() {
     ],
     "areaServed": {
       "@type": "AdministrativeArea",
-      "name": "Sydney Metropolitan Area"
+      "name": "Melbourne Metropolitan Area"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
