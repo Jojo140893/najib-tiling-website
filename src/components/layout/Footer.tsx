@@ -74,6 +74,9 @@ export default function Footer() {
                 <Link href="/testimonials" className="hover:text-brand-blue transition-colors">Reviews & Testimonials</Link>
               </li>
               <li>
+                <Link href="/faq" className="hover:text-brand-blue transition-colors">FAQ</Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-brand-blue transition-colors">Contact Us</Link>
               </li>
               <li>

@@ -6,6 +6,7 @@ import { Play, Eye, Maximize2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import Lightbox from "@/components/Lightbox";
+import ReelShowcase from "@/components/ReelShowcase";
 
 // Media dataset mapped from public/portfolio
 const mediaItems = [
@@ -116,6 +117,9 @@ export default function Portfolio() {
           </p>
         </div>
       </section>
+
+      {/* Work in Action — real scroll-autoplay reels from the client's job sites */}
+      <ReelShowcase />
 
       {/* Before / After Renovation Slider */}
       <section className="py-24 bg-white">
