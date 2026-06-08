@@ -9,7 +9,7 @@
  *   - keep the reviews in sync with what is shown on the site
  */
 
-const BASE = "https://njprotiling.com.au";
+const BASE = "https://njprotiling.com";
 
 const schema = {
   "@context": "https://schema.org",

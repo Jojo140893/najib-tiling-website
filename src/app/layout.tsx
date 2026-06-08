@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     template: "%s | NJ Pro Tiling"
   },
   description: "NJ Pro Tiling provides premium floor tiling, wall tiling, bathroom renovations, waterproofing, kitchen splashbacks, and tile repair services across Melbourne. Contact 0468 372 835 for a free quote.",
-  metadataBase: new URL("https://njprotiling.com.au"),
+  metadataBase: new URL("https://njprotiling.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "NJ Pro Tiling | Premium Tiling Services Melbourne",
     description: "Quality tiling with a professional finish. Bathrooms, splashbacks, waterproofing, floor & wall tiling in Melbourne. Call 0468 372 835.",
-    url: "https://njprotiling.com.au",
+    url: "https://njprotiling.com",
     siteName: "NJ Pro Tiling",
     locale: "en_AU",
     type: "website",
