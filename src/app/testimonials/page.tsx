@@ -18,7 +18,7 @@ const initialTestimonials = [
   {
     id: 1,
     name: "Daniel K.",
-    suburb: "Parramatta",
+    suburb: "South Yarra",
     rating: 5,
     service: "Bathroom Renovation",
     text: "Najib did an incredible job tiling our bathroom. The levelling is absolutely perfect, and the custom niches look fantastic. Highly recommend NJ Pro Tiling!",
@@ -27,7 +27,7 @@ const initialTestimonials = [
   {
     id: 2,
     name: "Sarah M.",
-    suburb: "Ryde",
+    suburb: "Brunswick",
     rating: 5,
     service: "Kitchen Splashback",
     text: "Very professional team. They turned up exactly on time, laid down protective sheets, and finished our splashback in a day. Spotless clean-up afterwards.",
@@ -36,7 +36,7 @@ const initialTestimonials = [
   {
     id: 3,
     name: "Marcus L.",
-    suburb: "Cronulla",
+    suburb: "St Kilda",
     rating: 5,
     service: "Outdoor Patio Tiling",
     text: "Flawless outdoor tiling for our new patio. NJ Pro Tiling ensured correct falls for drainage. Will be using them for our upcoming laundry renovation.",
@@ -45,7 +45,7 @@ const initialTestimonials = [
   {
     id: 4,
     name: "Jessica H.",
-    suburb: "Chatswood",
+    suburb: "Fitzroy",
     rating: 5,
     service: "Floor Tiling",
     text: "Professional, fast, and competitive rates. Najib replaced our living room tiles with large format porcelain. The lines are dead straight and flat. Highly recommended!",
@@ -54,7 +54,7 @@ const initialTestimonials = [
   {
     id: 5,
     name: "Ahmad F.",
-    suburb: "Bankstown",
+    suburb: "Coburg",
     rating: 5,
     service: "Waterproofing & Bathroom Repairs",
     text: "Had a leak from our shower recess. Najib identified the issues, redid the waterproofing membrane, and tiled it beautifully. Highly skilled in waterproofing standards.",
@@ -172,11 +172,11 @@ export default function Testimonials() {
                     {/* Suburb */}
                     <div>
                       <label className="block text-[11px] font-extrabold uppercase tracking-wider text-slate-500 mb-1.5">
-                        Your Suburb (NSW)
+                        Your Suburb (VIC)
                       </label>
                       <input
                         type="text"
-                        placeholder="e.g. Ryde"
+                        placeholder="e.g. Richmond"
                         {...register("suburb", { required: "Suburb is required" })}
                         className={`w-full px-4 py-2.5 rounded-lg border text-sm focus:outline-none focus:ring-1 focus:ring-brand-blue ${
                           errors.suburb ? "border-red-300 bg-red-50/20" : "border-slate-200"
@@ -294,7 +294,7 @@ export default function Testimonials() {
 
                     <div className="flex items-center justify-between text-xs pt-4 border-t border-slate-50 mt-2 text-slate-500">
                       <span className="font-extrabold text-slate-900 text-sm">{rev.name}</span>
-                      <span>{rev.suburb}, NSW</span>
+                      <span>{rev.suburb}, VIC</span>
                     </div>
                   </div>
                 </div>

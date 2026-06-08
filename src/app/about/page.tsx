@@ -9,7 +9,7 @@ const corePillars = [
   {
     icon: <Award className="w-10 h-10 text-brand-blue shrink-0" />,
     title: "Licence & Standards Compliance",
-    desc: "We hold full NSW contractor licence #392817C and strictly adhere to Australian Standards, including AS 3740-2021 for waterproofing wet areas. This protects your home from structure-damaging leaks.",
+    desc: "We strictly adhere to Australian Standards, including AS 3740-2021 for waterproofing wet areas. This protects your home from structure-damaging leaks.",
   },
   {
     icon: <ShieldCheck className="w-10 h-10 text-brand-blue shrink-0" />,
@@ -43,7 +43,7 @@ export default function About() {
         <div className="relative z-10 max-w-4xl mx-auto px-4">
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight mb-4">About NJ Pro Tiling</h1>
           <p className="text-sm sm:text-lg text-brand-silver max-w-xl mx-auto leading-relaxed">
-            The story, standards, and values of Sydney's most dedicated tiling specialists.
+            The story, standards, and values of Melbourne's most dedicated tiling specialists.
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function About() {
                 Founded by lead craftsman Najib, **NJ Pro Tiling** was built on a simple philosophy: **never cut corners**. Tiling isn't just about placing tiles; it's a technical discipline requiring accurate levelling, correct screed slopes for water flow, and scientifically compliant waterproofing seals.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Based in Sydney, we serve homeowners, builders, and developers who seek top-tier craftsmanship for their kitchens, bathrooms, outdoor spaces, and commercial fits. We are skilled in laying all tiling varieties, including ceramic, porcelain, natural stone, marble, mosaic, and modern large-format tiles.
+                Based in Melbourne, we serve homeowners, builders, and developers who seek top-tier craftsmanship for their kitchens, bathrooms, outdoor spaces, and commercial fits. We are skilled in laying all tiling varieties, including ceramic, porcelain, natural stone, marble, mosaic, and modern large-format tiles.
               </p>
               
               <div className="flex gap-8 pt-4 border-t border-slate-100">
@@ -109,7 +109,7 @@ export default function About() {
                   <span className="text-xs text-brand-silver">Director & Master Tiler</span>
                 </div>
                 <div className="text-[10px] bg-brand-blue text-white py-1 px-2.5 rounded font-black tracking-wider uppercase">
-                  Licence #392817C
+                  Licensed & Insured
                 </div>
               </div>
             </motion.div>

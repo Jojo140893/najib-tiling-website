@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reviews & Testimonials — NJ Pro Tiling Sydney",
+  title: "Reviews & Testimonials — NJ Pro Tiling Melbourne",
   description:
-    "Read what Sydney homeowners say about NJ Pro Tiling — punctual, professional tilers known for flawless levelling and clean, long-lasting finishes.",
+    "Read what Melbourne homeowners say about NJ Pro Tiling — punctual, professional tilers known for flawless levelling and clean, long-lasting finishes.",
   alternates: { canonical: "/testimonials" },
 };
 

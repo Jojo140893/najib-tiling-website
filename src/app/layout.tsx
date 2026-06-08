@@ -17,17 +17,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "NJ Pro Tiling | Professional Wall & Floor Tilers Sydney",
+    default: "NJ Pro Tiling | Professional Wall & Floor Tilers Melbourne",
     template: "%s | NJ Pro Tiling"
   },
-  description: "NJ Pro Tiling provides premium floor tiling, wall tiling, bathroom renovations, waterproofing, kitchen splashbacks, and tile repair services across Sydney. Licence #392817C. Contact 0468 372 835 for a free quote.",
+  description: "NJ Pro Tiling provides premium floor tiling, wall tiling, bathroom renovations, waterproofing, kitchen splashbacks, and tile repair services across Melbourne. Contact 0468 372 835 for a free quote.",
   metadataBase: new URL("https://njprotiling.com.au"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "NJ Pro Tiling | Premium Tiling Services Sydney",
-    description: "Quality tiling with a professional finish. Bathrooms, splashbacks, waterproofing, floor & wall tiling in Sydney. Call 0468 372 835.",
+    title: "NJ Pro Tiling | Premium Tiling Services Melbourne",
+    description: "Quality tiling with a professional finish. Bathrooms, splashbacks, waterproofing, floor & wall tiling in Melbourne. Call 0468 372 835.",
     url: "https://njprotiling.com.au",
     siteName: "NJ Pro Tiling",
     locale: "en_AU",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "NJ Pro Tiling — premium wall & floor tiling in Sydney",
+        alt: "NJ Pro Tiling — premium wall & floor tiling in Melbourne",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NJ Pro Tiling | Premium Tiling Services Sydney",
-    description: "Quality tiling with a professional finish across Sydney. Call 0468 372 835.",
+    title: "NJ Pro Tiling | Premium Tiling Services Melbourne",
+    description: "Quality tiling with a professional finish across Melbourne. Call 0468 372 835.",
     images: ["/og-image.jpg"],
   },
 };

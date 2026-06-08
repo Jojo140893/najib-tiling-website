@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Get a Free Tiling Quote — NJ Pro Tiling Sydney",
+  title: "Get a Free Tiling Quote — NJ Pro Tiling Melbourne",
   description:
-    "Request a free, obligation-free tiling quote from NJ Pro Tiling. Tell us about your bathroom, floor, wall or waterproofing project anywhere in Sydney.",
+    "Request a free, obligation-free tiling quote from NJ Pro Tiling. Tell us about your bathroom, floor, wall or waterproofing project anywhere in Melbourne.",
   alternates: { canonical: "/quote" },
 };
 

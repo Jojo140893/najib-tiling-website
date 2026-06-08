@@ -113,7 +113,7 @@ export default function Portfolio() {
         <div className="relative z-10 max-w-4xl mx-auto px-4">
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight mb-4">Project Portfolio</h1>
           <p className="text-sm sm:text-lg text-brand-silver max-w-xl mx-auto leading-relaxed">
-            Real photos and videos from tiling projects we've completed across Sydney.
+            Real photos and videos from tiling projects we've completed across Melbourne.
           </p>
         </div>
       </section>

@@ -9,8 +9,8 @@ import { LogoMark } from "@/components/layout/Logo";
 const trustBadges = [
   {
     icon: <ShieldCheck className="w-8 h-8 text-brand-blue" />,
-    title: "NSW Licensed & Insured",
-    desc: "Contractor Licence #392817C. Peace of mind with full liability cover.",
+    title: "Licensed & Fully Insured",
+    desc: "Fully qualified tilers. Peace of mind with full liability cover.",
   },
   {
     icon: <CheckCircle2 className="w-8 h-8 text-brand-blue" />,
@@ -50,19 +50,19 @@ const featuredServices = [
 const testimonials = [
   {
     name: "Daniel K.",
-    suburb: "Parramatta",
+    suburb: "South Yarra",
     rating: 5,
     text: "Najib did an incredible job tiling our bathroom. The levelling is absolutely perfect, and the custom niches look fantastic. Highly recommend NJ Pro Tiling!",
   },
   {
     name: "Sarah M.",
-    suburb: "Ryde",
+    suburb: "Brunswick",
     rating: 5,
     text: "Very professional team. They turned up exactly on time, laid down protective sheets, and finished our splashback in a day. Spotless clean-up afterwards.",
   },
   {
     name: "Marcus L.",
-    suburb: "Cronulla",
+    suburb: "St Kilda",
     rating: 5,
     text: "Flawless outdoor tiling for our new patio. NJ Pro Tiling ensured correct falls for drainage. Will be using them for our upcoming laundry renovation.",
   },
@@ -117,7 +117,7 @@ export default function Home() {
               transition={{ duration: 0.45, delay: 0.2 }}
               className="mt-6 text-base sm:text-xl text-brand-silver max-w-2xl leading-relaxed"
             >
-              NSW licensed tilers providing flawless floor & wall tile installations. 
+              Premium floor & wall tile installations across Melbourne. 
               Certified waterproofing, screeding, and premium finishes that stand the test of time.
             </motion.p>
 
@@ -306,7 +306,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center justify-between pt-4 border-t border-white/5 text-xs">
                     <span className="font-bold text-white text-sm">{test.name}</span>
-                    <span className="text-slate-400 font-semibold">{test.suburb}, NSW</span>
+                    <span className="text-slate-400 font-semibold">{test.suburb}, VIC</span>
                   </div>
                 </motion.div>
               ))}

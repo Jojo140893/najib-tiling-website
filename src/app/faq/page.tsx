@@ -8,12 +8,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    q: "Which areas of Sydney do you service?",
-    a: "NJ Pro Tiling works across Sydney and the surrounding metropolitan suburbs, covering residential and light-commercial projects. If you're unsure whether we cover your area, give us a quick call on 0468 372 835 and we'll let you know.",
+    q: "Which areas of Melbourne do you service?",
+    a: "NJ Pro Tiling works across Melbourne and the surrounding metropolitan suburbs, covering residential and light-commercial projects. If you're unsure whether we cover your area, give us a quick call on 0468 372 835 and we'll let you know.",
   },
   {
     q: "Are you licensed and insured?",
-    a: "Yes. We hold NSW contractor Licence #392817C and carry full Public Liability insurance. Every job is completed to Australian Standards, including AS 3740 for waterproofing of wet areas.",
+    a: "Yes. We hold full contractor licensing and carry full Public Liability insurance. Every job is completed to Australian Standards, including AS 3740 for waterproofing of wet areas.",
   },
   {
     q: "Do you offer free quotes?",

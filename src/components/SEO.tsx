@@ -17,7 +17,7 @@ const schema = {
   "@id": `${BASE}/#business`,
   name: "NJ Pro Tiling",
   description:
-    "NSW licensed tilers providing premium floor & wall tiling, bathroom renovations, kitchen splashbacks, waterproofing and tile repairs across Sydney.",
+    "Licensed and fully insured tilers providing premium floor & wall tiling, bathroom renovations, kitchen splashbacks, waterproofing and tile repairs across Melbourne.",
   url: BASE,
   image: `${BASE}/og-image.jpg`,
   logo: `${BASE}/og-image.jpg`,
@@ -27,12 +27,12 @@ const schema = {
   currenciesAccepted: "AUD",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Sydney",
-    addressRegion: "NSW",
+    addressLocality: "Melbourne",
+    addressRegion: "VIC",
     addressCountry: "AU",
   },
-  areaServed: { "@type": "City", name: "Sydney" },
-  geo: { "@type": "GeoCoordinates", latitude: -33.8688, longitude: 151.2093 },
+  areaServed: { "@type": "City", name: "Melbourne" },
+  geo: { "@type": "GeoCoordinates", latitude: -37.8136, longitude: 144.9631 },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Real Sydney Tiling Projects & Videos",
+  title: "Portfolio — Real Melbourne Tiling Projects & Videos",
   description:
-    "See real NJ Pro Tiling projects across Sydney — bathrooms, splashbacks, floors and waterproofing — with on-site videos showcasing our craftsmanship.",
+    "See real NJ Pro Tiling projects across Melbourne — bathrooms, splashbacks, floors and waterproofing — with on-site videos showcasing our craftsmanship.",
   alternates: { canonical: "/portfolio" },
 };
 
