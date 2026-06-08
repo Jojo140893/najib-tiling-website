@@ -1,97 +1,97 @@
-import Script from "next/script";
+/**
+ * Site-wide LocalBusiness structured data (server-rendered JSON-LD).
+ * Rendered once from the root layout so it appears in the initial HTML on
+ * every page (more reliable for crawlers than client-injected scripts).
+ *
+ * TODO (owner): replace the placeholders below with verified data —
+ *   - real street address / postcode (or keep locality-only for a service-area business)
+ *   - real social profile URLs in `sameAs`
+ *   - keep the reviews in sync with what is shown on the site
+ */
+
+const BASE = "https://njprotiling.com.au";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "@id": `${BASE}/#business`,
+  name: "NJ Pro Tiling",
+  description:
+    "NSW licensed tilers providing premium floor & wall tiling, bathroom renovations, kitchen splashbacks, waterproofing and tile repairs across Sydney.",
+  url: BASE,
+  image: `${BASE}/og-image.jpg`,
+  logo: `${BASE}/og-image.jpg`,
+  telephone: "+61468372835",
+  email: "info@njprotiling.com.au",
+  priceRange: "$$",
+  currenciesAccepted: "AUD",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Sydney",
+    addressRegion: "NSW",
+    addressCountry: "AU",
+  },
+  areaServed: { "@type": "City", name: "Sydney" },
+  geo: { "@type": "GeoCoordinates", latitude: -33.8688, longitude: 151.2093 },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "07:00",
+      closes: "17:30",
+    },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Tiling Services",
+    itemListElement: [
+      "Floor Tiling",
+      "Wall Tiling",
+      "Bathroom Renovations",
+      "Kitchen Splashbacks",
+      "Outdoor & Patio Tiling",
+      "Waterproofing (AS 3740)",
+      "Tile Repair & Regrouting",
+    ].map((name) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name },
+    })),
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "3",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: [
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Daniel K." },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "Najib did an incredible job tiling our bathroom. The levelling is absolutely perfect, and the custom niches look fantastic. Highly recommend NJ Pro Tiling!",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Sarah M." },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "Very professional team. They turned up exactly on time, laid down protective sheets, and finished our splashback in a day. Spotless clean-up afterwards.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Marcus L." },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "Flawless outdoor tiling for our new patio. NJ Pro Tiling ensured correct falls for drainage. Will be using them for our upcoming laundry renovation.",
+    },
+  ],
+};
 
 export default function SEO() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "NJ Pro Tiling",
-    "image": "https://njprotiling.com.au/logo.jpg",
-    "@id": "https://njprotiling.com.au/#business",
-    "url": "https://njprotiling.com.au",
-    "telephone": "+61468372835",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Sydney Metro Area",
-      "addressLocality": "Sydney",
-      "addressRegion": "NSW",
-      "postalCode": "2000",
-      "addressCountry": "AU"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -33.8688,
-      "longitude": 151.2093
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "07:00",
-        "closes": "17:30"
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/njprotiling",
-      "https://www.instagram.com/njprotiling"
-    ],
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Sydney Metropolitan Area"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Tiling Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Floor Tiling"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Wall Tiling"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Bathroom Renovations"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Waterproofing"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Kitchen Splashbacks"
-          }
-        }
-      ]
-    }
-  };
-
   return (
-    <Script
-      id="local-business-schema"
+    <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />

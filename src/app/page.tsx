@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, ArrowRight, ShieldCheck, CheckCircle2, Star, Clock, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import SEO from "@/components/SEO";
 import { LogoMark } from "@/components/layout/Logo";
 
 const trustBadges = [
@@ -72,7 +71,6 @@ const testimonials = [
 export default function Home() {
   return (
     <>
-      <SEO />
       <div className="w-full overflow-hidden">
         
         {/* HERO SECTION */}

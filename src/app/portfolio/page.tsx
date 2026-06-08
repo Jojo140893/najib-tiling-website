@@ -4,9 +4,9 @@ import { useState } from "react";
 import Image from "next/image";
 import { Play, Eye, Maximize2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import Lightbox from "@/components/Lightbox";
 import ReelShowcase from "@/components/ReelShowcase";
+import GridVideo from "@/components/GridVideo";
 
 // Media dataset mapped from public/portfolio
 const mediaItems = [
@@ -121,25 +121,6 @@ export default function Portfolio() {
       {/* Work in Action — real scroll-autoplay reels from the client's job sites */}
       <ReelShowcase />
 
-      {/* Before / After Renovation Slider */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-xs font-extrabold uppercase tracking-widest text-brand-blue mb-3">Tiling Transformations</h2>
-            <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Interactive Before & After</h3>
-            <p className="mt-3 text-sm text-slate-500 max-w-xl mx-auto leading-relaxed">
-              Drag the slider to see how we transform a standard concrete screed area into a clean, waterproofed, tiled bathroom layout.
-            </p>
-          </div>
-          <BeforeAfterSlider
-            beforeImage="/portfolio/project-6.jpeg"
-            afterImage="/portfolio/project-1.jpeg"
-            beforeLabel="Prepare & Screed"
-            afterLabel="Finished Premium Tiling"
-          />
-        </div>
-      </section>
-
       {/* Filterable Media Grid */}
       <section className="py-24 border-t border-slate-100 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -187,14 +168,13 @@ export default function Portfolio() {
                       />
                     ) : (
                       <>
-                        <video
+                        <GridVideo
                           src={item.src}
-                          muted
-                          preload="metadata"
-                          className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 opacity-60"
+                          className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                         />
-                        <div className="absolute w-14 h-14 bg-brand-blue rounded-full flex items-center justify-center text-white shadow-lg shadow-brand-blue/35 z-10">
-                          <Play size={20} className="fill-current ml-1" />
+                        <div className="absolute bottom-3 left-3 z-10 flex items-center gap-1.5 rounded-full bg-black/45 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+                          <Play size={10} className="fill-current" />
+                          <span>Video</span>
                         </div>
                       </>
                     )}

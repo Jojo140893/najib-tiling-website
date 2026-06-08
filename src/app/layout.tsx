@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import SEO from "@/components/SEO";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,20 @@ export const metadata: Metadata = {
     siteName: "NJ Pro Tiling",
     locale: "en_AU",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "NJ Pro Tiling — premium wall & floor tiling in Sydney",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NJ Pro Tiling | Premium Tiling Services Sydney",
+    description: "Quality tiling with a professional finish across Sydney. Call 0468 372 835.",
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -41,10 +56,11 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-AU"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
+        <SEO />
         <Header />
         <main className="flex-grow flex flex-col">{children}</main>
         <Footer />

@@ -27,6 +27,10 @@ const items: ShowcaseItem[] = [
   { type: "video", src: "/showcase/10_video.mp4", poster: "/showcase/10_video_poster.jpg", caption: "Floor Tiling over Waterproofing" },
   { type: "video", src: "/showcase/11_video.mp4", poster: "/showcase/11_video_poster.jpg", caption: "Shower Base & Waterproofing" },
   { type: "photo", src: "/showcase/12_photo.jpg", caption: "Wall Tiling In Progress" },
+  { type: "video", src: "/showcase/13_video.mp4", poster: "/showcase/13_video_poster.jpg", caption: "Finished Shower Tiling" },
+  { type: "video", src: "/showcase/14_video.mp4", poster: "/showcase/14_video_poster.jpg", caption: "Commercial Storefront Project" },
+  { type: "video", src: "/showcase/15_video.mp4", poster: "/showcase/15_video_poster.jpg", caption: "Pedestal Paving over Waterproofing" },
+  { type: "video", src: "/showcase/16_video.mp4", poster: "/showcase/16_video_poster.jpg", caption: "Large-Format Wall Tiling" },
 ];
 
 // photos get their own index list for the lightbox
