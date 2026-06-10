@@ -260,7 +260,7 @@ export default function Home() {
                 >
                   <Image
                     src={src}
-                    alt={`NJ Pro Tiling finish ${i+1}`}
+                    alt={`Completed tiling project ${i + 1} in Melbourne by NJ Pro Tiling`}
                     fill
                     sizes="(max-width: 768px) 50vw, 300px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

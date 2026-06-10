@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   description:
     "Get in touch with NJ Pro Tiling for a free, no-obligation tiling quote in Melbourne. Call 0468 372 835 or send us your project details today.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact NJ Pro Tiling | Free Melbourne Quote",
+    description:
+      "Call 0468 372 835 or request a free, no-obligation tiling quote anywhere in Melbourne.",
+    url: "https://njprotiling.com/contact",
+  },
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
