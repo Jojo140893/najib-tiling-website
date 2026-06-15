@@ -101,7 +101,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-brand-blue shrink-0" />
-                <a href="mailto:info@njprotiling.com.au" className="hover:text-brand-blue transition-colors">info@njprotiling.com.au</a>
+                <a href="mailto:njpro.tiling@gmail.com" className="hover:text-brand-blue transition-colors">njpro.tiling@gmail.com</a>
               </li>
               <li className="flex items-start gap-3 border-t border-white/5 pt-3">
                 <Clock size={18} className="text-brand-blue shrink-0 mt-0.5" />
@@ -123,7 +123,7 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-brand-blue transition-colors">Terms of Service</Link>
             <div className="flex items-center gap-1">
               <FileText size={12} />
-              <span>ABN 84 928 371 049</span>
+              <span>ABN 76 492 355 135</span>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ const schema = {
   image: `${BASE}/og-image.jpg`,
   logo: `${BASE}/og-image.jpg`,
   telephone: "+61468372835",
-  email: "info@njprotiling.com.au",
+  email: "njpro.tiling@gmail.com",
   priceRange: "$$",
   currenciesAccepted: "AUD",
   address: {

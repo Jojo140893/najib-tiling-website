@@ -112,7 +112,7 @@ export default function Contact() {
 
                   {/* Email */}
                   <a
-                    href="mailto:info@njprotiling.com.au"
+                    href="mailto:njpro.tiling@gmail.com"
                     className="flex items-center gap-4 p-3 rounded-xl border border-slate-100 hover:border-slate-200 hover:bg-slate-50/50 transition-all group"
                   >
                     <div className="w-10 h-10 rounded-lg bg-brand-blue/5 text-brand-blue flex items-center justify-center shrink-0">
@@ -121,7 +121,7 @@ export default function Contact() {
                     <div>
                       <span className="block text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Address</span>
                       <span className="font-bold text-slate-900 text-sm group-hover:text-brand-blue transition-colors">
-                        info@njprotiling.com.au
+                        njpro.tiling@gmail.com
                       </span>
                     </div>
                   </a>
@@ -145,7 +145,7 @@ export default function Contact() {
                   </li>
                   <li className="flex items-center gap-3">
                     <ShieldCheck size={16} className="text-brand-blue shrink-0" />
-                    <span>ABN: 84 928 371 049 (Fully Insured)</span>
+                    <span>ABN: 76 492 355 135 (Fully Insured)</span>
                   </li>
                 </ul>
               </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function LogoMark({ className = "w-12 h-12" }: { className?: string }) {
   return (
@@ -120,7 +121,15 @@ export function LogoMark({ className = "w-12 h-12" }: { className?: string }) {
 export default function Logo() {
   return (
     <div className="flex items-center gap-3 group">
-      <LogoMark className="w-10 h-10 shrink-0" />
+      <span className="relative inline-block w-10 h-10 shrink-0 overflow-hidden rounded-lg ring-1 ring-white/10">
+        <Image
+          src="/logo-emblem.png"
+          alt="NJ Pro Tiling logo"
+          fill
+          sizes="60px"
+          className="object-cover"
+        />
+      </span>
       <div className="flex flex-col">
         <span className="font-extrabold text-xl tracking-wider leading-none text-white group-hover:text-brand-blue transition-colors">
           NJ PRO TILING

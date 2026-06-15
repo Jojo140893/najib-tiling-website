@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
 
         <h2 className="text-lg font-bold text-slate-900 mt-8 mb-2">4. Your Rights</h2>
         <p>
-          You have the right to request that we delete any contact information or files we hold from your quote inquiries at any time. Simply email us at info@njprotiling.com.au.
+          You have the right to request that we delete any contact information or files we hold from your quote inquiries at any time. Simply email us at njpro.tiling@gmail.com.
         </p>
       </div>
     </div>
