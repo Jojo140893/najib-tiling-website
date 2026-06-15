@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 export function LogoMark({ className = "w-12 h-12" }: { className?: string }) {
   return (
@@ -117,28 +116,15 @@ export function LogoMark({ className = "w-12 h-12" }: { className?: string }) {
   );
 }
 
-// Horizontal combined header Logo
+// Header / footer logo — uses the real NJ Pro Tiling artwork
 export default function Logo() {
   return (
-    <div className="flex items-center gap-3 group">
-      <span className="relative inline-block w-10 h-10 shrink-0 overflow-hidden rounded-lg ring-1 ring-white/10">
-        <Image
-          src="/logo-emblem.png"
-          alt="NJ Pro Tiling logo"
-          fill
-          sizes="60px"
-          className="object-cover"
-        />
-      </span>
-      <div className="flex flex-col">
-        <span className="font-extrabold text-xl tracking-wider leading-none text-white group-hover:text-brand-blue transition-colors">
-          NJ PRO TILING
-        </span>
-        <span className="text-[9px] tracking-widest text-brand-silver font-semibold mt-0.5">
-          QUALITY TILING • PROFESSIONAL FINISH
-        </span>
-      </div>
-    </div>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/logo.svg"
+      alt="NJ Pro Tiling — Quality Tiling, Professional Finish"
+      className="h-14 w-auto"
+    />
   );
 }
 
