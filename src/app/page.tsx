@@ -96,7 +96,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="mb-8"
             >
-              <LogoMark className="w-28 h-28 drop-shadow-xl" />
+              <LogoMark className="w-44 drop-shadow-xl" />
             </motion.div>
 
             <motion.h1
