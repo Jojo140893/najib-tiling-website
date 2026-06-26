@@ -17,13 +17,40 @@ export function LogoMark({ className = "w-12 h-12" }: { className?: string }) {
 // Logo: "wordmark" = just the PRO TILING wordmark (nav bar); "full" = full lockup (footer)
 export default function Logo({ variant = "full" }: { variant?: "full" | "wordmark" }) {
   if (variant === "wordmark") {
+    const clip = {
+      WebkitBackgroundClip: "text",
+      backgroundClip: "text",
+      color: "transparent",
+      WebkitTextFillColor: "transparent",
+    } as const;
     return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src="/logo-wordmark.png"
-        alt="NJ Pro Tiling"
-        className="h-8 w-auto"
-      />
+      <span
+        aria-label="NJ Pro Tiling"
+        className="select-none whitespace-nowrap text-[1.7rem] font-extrabold leading-none tracking-wide sm:text-[1.85rem]"
+        style={{
+          fontFamily: "var(--font-logo), system-ui, sans-serif",
+          filter: "drop-shadow(0 1px 1.5px rgba(0,0,0,0.45))",
+        }}
+      >
+        <span
+          style={{
+            ...clip,
+            backgroundImage: "linear-gradient(180deg, #2f8ae6 0%, #1567c8 50%, #0a4f9e 100%)",
+          }}
+        >
+          PRO
+        </span>
+        <span
+          style={{
+            ...clip,
+            marginLeft: "0.28em",
+            backgroundImage:
+              "linear-gradient(180deg, #ffffff 0%, #d2d2d2 40%, #8c8c8c 56%, #e6e6e6 100%)",
+          }}
+        >
+          TILING
+        </span>
+      </span>
     );
   }
   return (
