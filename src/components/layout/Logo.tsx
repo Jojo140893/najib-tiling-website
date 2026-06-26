@@ -14,8 +14,18 @@ export function LogoMark({ className = "w-12 h-12" }: { className?: string }) {
   );
 }
 
-// Header / footer logo — full logo lockup
-export default function Logo() {
+// Logo: "wordmark" = just the PRO TILING wordmark (nav bar); "full" = full lockup (footer)
+export default function Logo({ variant = "full" }: { variant?: "full" | "wordmark" }) {
+  if (variant === "wordmark") {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src="/logo-wordmark.png"
+        alt="NJ Pro Tiling"
+        className="h-8 w-auto"
+      />
+    );
+  }
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img

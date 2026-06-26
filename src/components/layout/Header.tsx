@@ -51,7 +51,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <Link href="/">
-            <Logo />
+            <Logo variant="wordmark" />
           </Link>
 
           {/* Desktop Navigation */}
