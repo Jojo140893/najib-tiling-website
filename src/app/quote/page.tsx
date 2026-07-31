@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Phone, Award, CheckCircle2, ChevronRight, Upload } from "lucide-react";
+import { Phone, MessageCircle, Award, CheckCircle2, ChevronRight, Upload } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -353,6 +353,15 @@ function QuoteFormContent() {
                 >
                   <Phone size={14} />
                   <span>Call 0468 372 835</span>
+                </a>
+                <a
+                  href="https://wa.me/61468372835"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full py-3 bg-emerald-500 text-white rounded-lg text-xs font-bold shadow-sm hover:bg-emerald-600 transition-colors"
+                >
+                  <MessageCircle size={14} className="fill-current" />
+                  <span>WhatsApp Najib</span>
                 </a>
               </div>
 
